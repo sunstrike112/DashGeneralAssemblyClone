@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+body{
+    background:black;
+    color:white;
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+}
+
+
+header{
+    display:flex;
+    flex-direction: column;
+}
+
+/* Navigation bar  */
+nav>div>h1,nav>div>h2{
+    text-transform: uppercase;
+    margin: 6px;
+}
+
+.login-email *{
+    color:#ddd;
+    font-size: 18px;
+}
+
+.brand-dash>h1{
+    font-size: 24px;
+    text-transform: none;
+    margin-top: 0;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.brand-dash{
+    display: flex;
+    font-family: 'Shippori Mincho B1', Georgia, serif;
+
+}
+
+.login-email{
+    font-family: 'Ropa Sans', Impact, sans-serif;
+    margin-left: auto;
+}
+
+/* Masthead*/
+.masthead{
+    background-image: url(../images/backgroundimage.jpg);
+    background-position: top;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+}
+
+div.container{
+    flex-direction: column;
+}
+
+.masthead>h1{
+    position: relative;
+    font-family: 'Ropa Sans', Impact, sans-serif;
+    text-transform: uppercase;
+    font-size: 72px;
+    margin:20px 30px 0;
+}
+
+.masthead>h2{
+    position: relative;
+    font-family: 'Shippori Mincho B1', Georgia, serif;
+    font-size: 22px;
+    margin:20px 300px 0px;
+}
+
+.masthead>a{
+    background: #FF2500;
+    border-bottom: 3px solid #c20027;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Ropa Sans', Impact, sans-serif;
+    font-size: 22px;
+    margin: 40px auto;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.masthead>a:hover{
+    background: rgb(231, 9, 9);
+}
+
+@media screen and (max-width:1025px){
+    .masthead>h1{
+        font-size: 50px;
+        margin: 0 50px;
+    }
+
+    .masthead>h2{
+        font-size: 24px;
+        margin: 0 50px;
+    }   
+}
+
+@media screen and (max-width:769px){
+    .masthead>h1{
+        font-size: 56px;
+        margin: 0 50px;
+    }
+
+    .masthead>h2{
+        font-size: 18px;
+        margin: 0 50px;
+    }   
+}
+
+@media screen and (max-width:426px){
+    .masthead{
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .masthead>h1{
+        font-size: 32px;
+        margin: 10px 0px;
+        padding: 0 10px;
+    }
+
+    .masthead>h2{
+        font-size: 14px;
+        margin: 10px 0px;
+        padding: 0 10px;
+    }   
+}
+
+@media screen and (max-width:321px){
+
+    .masthead>h1{
+        padding: 0 10px;
+        font-size: 32px;
+        margin: 20px 0;
+    }
+
+    .masthead>h2{
+        font-size: 14px;
+        padding: 0 20px;
+        margin: 20px 0;
+    }   
+}
+
+/* Course */
+ul{
+    list-style-type: none;
+    text-align: center;
+    justify-content: space-around;
+    padding: 80px 0px;
+    margin-top: 20px;
+}
+
+li>h3{
+    text-transform: uppercase;
+    font-family: 'Ropa Sans', Impact, sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+li>p{
+    font-family: 'Shippori Mincho B1', Georgia, serif;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+@media screen and (max-width:2561px){
+    li>p{
+        padding:0 15%;
+        font-size: 15px;
+    }
+    .course{
+        margin: 0 25%;
+    }
+
+    .masthead{
+        margin: 0 25%;
+    }
+}
+
+@media screen and (max-width:1442px){
+    li>p{
+        padding:0 3%;
+        font-size: 15px;
+    }
+    .course{
+        margin: 0 15%;
+    }
+
+    .masthead{
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width:1025px){
+    li>p{
+        padding:0 3%;
+        font-size: 16px;
+    }
+    .course{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:769px){
+    ul{
+        padding: 0;
+    }
+
+    li{ 
+        margin-top: 50px;
+    }
+
+    li>p{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width:426px){
+    ul.container{
+        flex-direction:column;
+    }
+}
+
+/* About */
+.about{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Shippori Mincho B1', Georgia, serif;
+}
+
+@media screen and (max-width:2561px){
+    .about>p{
+        padding: 0 950px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1441px){
+    .about>p{
+        padding: 0 450px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1367px){
+    .about>p{
+        padding: 0 350px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1025px){
+    .about>p{
+        padding: 0 240px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:769px){
+    .about>p{
+        padding: 0 120px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:426px){
+    .about>p{
+        padding: 0 10px;
+        font-size: 14px;
+    }
+}
+
+.about>p>a{
+    color:#ddd;
+}
+
+.about-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-logo>hr{
+    display: inline-block;
+    border-top:none ;
+    width: 100px;
+    height: 1px;
+    margin: 0 20px;
+    color:white;
+    background:white;
+    margin-top: 25px;
+}
+
+/* Video */
+.video{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0 60px;
+}
+
+iframe{
+    width: 600px;
+    height: 320px;
+}
+
+@media screen and (max-width:425px){
+    iframe{
+        width: 320px;
+        height: 200px;
+    }
+}
+
+/* Footer */
+footer{
+    font-family: 'Shippori Mincho B1', Georgia, serif;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 40px;
+    color:white;
+}
+
+footer>p{
+    padding: 3px 10px;
+}
+
+footer>p>a{
+    color:#ddd;
+}
